@@ -7,7 +7,9 @@ function Profile() {
   if (!user) return <h1>Not Logged In</h1>;
   return (
     <div>
-      <h2>Profile : {user.username}</h2>
+      <h2>
+        Profile : {user.username} {user.password}
+      </h2>
     </div>
   );
 }
